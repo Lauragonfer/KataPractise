@@ -8,6 +8,8 @@ public class Friends {
     List<User> friendsList;
     Console console;
 
+    static final String HEADFRIENDSLIST = "Friends List";
+
     public Friends(Console console) {
         this.friendsList = new ArrayList<User>();
         this.console = console;
@@ -19,7 +21,7 @@ public class Friends {
 
     public void showFriends(){
 
-        console.printline("Friends List");
+        console.printline(HEADFRIENDSLIST);
 
         if (!friendsList.isEmpty())
         {

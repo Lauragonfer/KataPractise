@@ -4,9 +4,9 @@ import SocialNetwork.*;
 
 public class CommandParse {
 
-    public static final String ADDPOSTWALL = "->";
-    public static final String FOLLOW = "follows";
-    public static final String WALL = "wall";
+    static final String ADDPOSTWALL = "->";
+    static final String FOLLOW = "follows";
+    static final String WALL = "wall";
 
     SocialNetwork socialNetwork;
     Console console;

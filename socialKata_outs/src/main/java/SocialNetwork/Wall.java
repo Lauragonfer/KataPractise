@@ -8,6 +8,9 @@ public class Wall {
     List<Post> postList;
     Console console;
 
+    static final String HEADPERSONALWALL = "Personal Wall";
+    static final String HEADWALL = "Wall";
+
 
     public Wall(Console console) {
         this.postList = new ArrayList<Post>();
@@ -21,7 +24,7 @@ public class Wall {
 
     public void showPersonalWall(){
 
-        console.printline("Personal Wall");
+        console.printline(HEADPERSONALWALL);
 
         if (!postList.isEmpty())
         {
@@ -34,7 +37,7 @@ public class Wall {
 
     public void showPostList(List<Post> listPost){
 
-        console.printline("Wall");
+        console.printline(HEADWALL);
 
         if (!listPost.isEmpty())
         {
