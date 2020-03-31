@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4092a289-2758-4548-bc14-a39475d8c719" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="socialKata_outs" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZfU80WdE8Y52auZ1SiD7jG4775" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/SocialNetwork" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="SocialNetwork.Commands" />
+      <recent name="SocialNetwork" />
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="SocialNetwork" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.FollowTestShould">
+    <configuration name="FollowTestShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="socialKata_outs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="UnitTest.FollowTestShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FollowsAcceptanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="socialKata_outs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AcceptanceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AcceptanceTest" />
+      <option name="MAIN_CLASS_NAME" value="AcceptanceTest.FollowsAcceptanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostAcceptanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="socialKata_outs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AcceptanceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AcceptanceTest" />
+      <option name="MAIN_CLASS_NAME" value="AcceptanceTest.PostAcceptanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostReadTestShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="socialKata_outs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="UnitTest.PostReadTestShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadAcceptanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="socialKata_outs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AcceptanceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AcceptanceTest" />
+      <option name="MAIN_CLASS_NAME" value="AcceptanceTest.ReadAcceptanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FollowTestShould" />
+        <item itemvalue="JUnit.PostReadTestShould" />
+        <item itemvalue="JUnit.FollowsAcceptanceTest" />
+        <item itemvalue="JUnit.PostAcceptanceTest" />
+        <item itemvalue="JUnit.ReadAcceptanceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4092a289-2758-4548-bc14-a39475d8c719" name="Default Changelist" comment="" />
+      <created>1585229478092</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585229478092</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1960" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585660410100">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1960" y="101" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585296493552" />
+    <state x="453" y="88" key="#com.intellij.ide.util.MemberChooser/0.23.1280.700/1280.23.1920.1057@0.23.1280.700" timestamp="1585299954688" />
+    <state x="453" y="89" key="#com.intellij.ide.util.MemberChooser/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585300461554" />
+    <state x="1960" y="122" key="#com.intellij.ide.util.MemberChooser/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585660410100" />
+    <state x="1960" y="114" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328108174" />
+    <state x="1847" y="225" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1585663064807">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="378" y="157" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1280.700/1280.23.1920.1057@0.23.1280.700" timestamp="1585231710589" />
+    <state x="378" y="158" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585231133790" />
+    <state x="1847" y="225" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663064807" />
+    <state x="1889" y="345" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585663066309">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="406" y="236" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.700/1280.23.1920.1057@0.23.1280.700" timestamp="1585231714065" />
+    <state x="406" y="237" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585231061944" />
+    <state x="1889" y="345" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663066309" />
+    <state x="357" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585240356889">
+      <screen x="0" y="23" width="1280" height="703" />
+    </state>
+    <state x="357" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585240356889" />
+    <state x="378" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585240445999">
+      <screen x="0" y="23" width="1280" height="703" />
+    </state>
+    <state x="378" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585240445999" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom" timestamp="1585663330055">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="207" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585298171660" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.23.1280.693/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585651282154" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585652385625" />
+    <state width="1878" height="207" key="GridCell.Tab.0.bottom/0.23.1280.700/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585296959324" />
+    <state width="1238" height="193" key="GridCell.Tab.0.bottom/0.23.1280.700/1280.23.1920.1057@0.23.1280.700" timestamp="1585556877305" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.23.1280.700/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663330055" />
+    <state width="1238" height="302" key="GridCell.Tab.0.bottom/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585315223612" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663227016" />
+    <state width="1238" height="303" key="GridCell.Tab.0.bottom/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310769875" />
+    <state width="1878" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328473427" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center" timestamp="1585663330054">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="207" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585298171644" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.23.1280.693/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585651282149" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585652385622" />
+    <state width="1878" height="207" key="GridCell.Tab.0.center/0.23.1280.700/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585296959321" />
+    <state width="1238" height="193" key="GridCell.Tab.0.center/0.23.1280.700/1280.23.1920.1057@0.23.1280.700" timestamp="1585556877302" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.23.1280.700/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663330054" />
+    <state width="1238" height="302" key="GridCell.Tab.0.center/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585315223611" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663227015" />
+    <state width="1238" height="303" key="GridCell.Tab.0.center/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310769874" />
+    <state width="1878" height="174" key="GridCell.Tab.0.center/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328473427" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left" timestamp="1585663330054">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="207" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585298171643" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.23.1280.693/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585651282146" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585652385621" />
+    <state width="1878" height="207" key="GridCell.Tab.0.left/0.23.1280.700/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585296959318" />
+    <state width="1238" height="193" key="GridCell.Tab.0.left/0.23.1280.700/1280.23.1920.1057@0.23.1280.700" timestamp="1585556877298" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.23.1280.700/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663330054" />
+    <state width="1238" height="302" key="GridCell.Tab.0.left/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585315223610" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663227015" />
+    <state width="1238" height="303" key="GridCell.Tab.0.left/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310769873" />
+    <state width="1878" height="174" key="GridCell.Tab.0.left/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328473426" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right" timestamp="1585663330055">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="207" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585298171657" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.23.1280.693/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585651282152" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585652385624" />
+    <state width="1878" height="207" key="GridCell.Tab.0.right/0.23.1280.700/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585296959323" />
+    <state width="1238" height="193" key="GridCell.Tab.0.right/0.23.1280.700/1280.23.1920.1057@0.23.1280.700" timestamp="1585556877304" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.23.1280.700/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663330055" />
+    <state width="1238" height="302" key="GridCell.Tab.0.right/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585315223612" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585663227016" />
+    <state width="1238" height="303" key="GridCell.Tab.0.right/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310769875" />
+    <state width="1878" height="174" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328473427" />
+    <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1585662262553">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.1.bottom/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585651826772" />
+    <state width="1878" height="357" key="GridCell.Tab.1.bottom/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585662262553" />
+    <state width="1878" height="357" key="GridCell.Tab.1.center" timestamp="1585662262550">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.1.center/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585651826770" />
+    <state width="1878" height="357" key="GridCell.Tab.1.center/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585662262550" />
+    <state width="1878" height="357" key="GridCell.Tab.1.left" timestamp="1585662262549">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.1.left/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585651826768" />
+    <state width="1878" height="357" key="GridCell.Tab.1.left/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585662262549" />
+    <state width="1878" height="357" key="GridCell.Tab.1.right" timestamp="1585662262551">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.1.right/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585651826771" />
+    <state width="1878" height="357" key="GridCell.Tab.1.right/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585662262551" />
+    <state x="1749" y="190" key="SettingsEditor" timestamp="1585298393270">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1749" y="190" key="SettingsEditor/0.23.1280.700/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585298393270" />
+    <state x="1737" y="306" key="caller.chooser.dialog" timestamp="1585660462722">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1737" y="306" key="caller.chooser.dialog/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585660462722" />
+    <state x="423" y="156" key="chooseDestDirectoryDialog" timestamp="1585240396507">
+      <screen x="0" y="23" width="1280" height="703" />
+    </state>
+    <state x="423" y="156" key="chooseDestDirectoryDialog/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585240396507" />
+    <state x="296" y="128" width="837" height="550" key="find.popup" timestamp="1585239753268">
+      <screen x="0" y="23" width="1280" height="703" />
+    </state>
+    <state x="296" y="128" width="837" height="550" key="find.popup/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585239753268" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1585303716952">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.23.1280.693/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585303716952" />
+    <state x="1669" y="255" key="new project wizard" timestamp="1585555845128">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1669" y="255" key="new project wizard/0.23.1280.696/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585555845128" />
+    <state x="1883" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1585328284072">
+      <screen x="1280" y="23" width="1920" height="973" />
+    </state>
+    <state x="402" y="23" key="refactoring.ChangeSignatureDialog/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310729900" />
+    <state x="1883" y="23" key="refactoring.ChangeSignatureDialog/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328284072" />
+  </component>
+</project>
