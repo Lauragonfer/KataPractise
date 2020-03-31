@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4092a289-2758-4548-bc14-a39475d8c719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SocialNetwork/Commands/CommandParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SocialNetwork/Commands/CommandParse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SocialNetwork/Friends.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SocialNetwork/Friends.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SocialNetwork/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SocialNetwork/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/socialKata_outs.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SocialNetwork/Friends.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SocialNetwork/Friends.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SocialNetwork/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SocialNetwork/Wall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/socialKata_outs.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +48,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostReadTestShould">
+  <component name="RunManager" selected="JUnit.ReadAcceptanceTest">
     <configuration name="FollowTestShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="socialKata_outs" />
       <extension name="coverage">
@@ -134,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PostReadTestShould" />
-        <item itemvalue="JUnit.FollowTestShould" />
         <item itemvalue="JUnit.ReadAcceptanceTest" />
         <item itemvalue="JUnit.PostAcceptanceTest" />
         <item itemvalue="JUnit.FollowsAcceptanceTest" />
+        <item itemvalue="JUnit.PostReadTestShould" />
+        <item itemvalue="JUnit.FollowTestShould" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +176,7 @@
       <screen x="0" y="23" width="1280" height="703" />
     </state>
     <state x="378" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585240445999" />
-    <state width="1878" height="325" key="GridCell.Tab.0.bottom" timestamp="1585665099175">
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom" timestamp="1585665290893">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="207" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585298171660" />
@@ -196,9 +188,9 @@
     <state width="1238" height="302" key="GridCell.Tab.0.bottom/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585315223612" />
     <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585664384353" />
     <state width="1238" height="303" key="GridCell.Tab.0.bottom/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310769875" />
-    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.23.1280.706/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585665099175" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.23.1280.706/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585665290893" />
     <state width="1878" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328473427" />
-    <state width="1878" height="325" key="GridCell.Tab.0.center" timestamp="1585665099173">
+    <state width="1878" height="325" key="GridCell.Tab.0.center" timestamp="1585665290892">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="207" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585298171644" />
@@ -210,9 +202,9 @@
     <state width="1238" height="302" key="GridCell.Tab.0.center/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585315223611" />
     <state width="1878" height="325" key="GridCell.Tab.0.center/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585664384351" />
     <state width="1238" height="303" key="GridCell.Tab.0.center/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310769874" />
-    <state width="1878" height="325" key="GridCell.Tab.0.center/0.23.1280.706/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585665099173" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.23.1280.706/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585665290892" />
     <state width="1878" height="174" key="GridCell.Tab.0.center/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328473427" />
-    <state width="1878" height="325" key="GridCell.Tab.0.left" timestamp="1585665099172">
+    <state width="1878" height="325" key="GridCell.Tab.0.left" timestamp="1585665290891">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="207" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585298171643" />
@@ -224,9 +216,9 @@
     <state width="1238" height="302" key="GridCell.Tab.0.left/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585315223610" />
     <state width="1878" height="325" key="GridCell.Tab.0.left/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585664384349" />
     <state width="1238" height="303" key="GridCell.Tab.0.left/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310769873" />
-    <state width="1878" height="325" key="GridCell.Tab.0.left/0.23.1280.706/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585665099172" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.23.1280.706/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585665290891" />
     <state width="1878" height="174" key="GridCell.Tab.0.left/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328473426" />
-    <state width="1878" height="325" key="GridCell.Tab.0.right" timestamp="1585665099174">
+    <state width="1878" height="325" key="GridCell.Tab.0.right" timestamp="1585665290892">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="207" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1585298171657" />
@@ -238,7 +230,7 @@
     <state width="1238" height="302" key="GridCell.Tab.0.right/0.23.1280.703/1280.23.1920.1057@0.23.1280.703" timestamp="1585315223612" />
     <state width="1878" height="325" key="GridCell.Tab.0.right/0.23.1280.703/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585664384352" />
     <state width="1238" height="303" key="GridCell.Tab.0.right/0.23.1280.706/1280.23.1920.1057@0.23.1280.706" timestamp="1585310769875" />
-    <state width="1878" height="325" key="GridCell.Tab.0.right/0.23.1280.706/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585665099174" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.23.1280.706/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585665290892" />
     <state width="1878" height="174" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1920.973@1280.23.1920.973" timestamp="1585328473427" />
     <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1585662262553">
       <screen x="1280" y="23" width="1920" height="1057" />
