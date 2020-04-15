@@ -2,7 +2,9 @@ package UnitTest;
 
 import SocialNetwork.*;
 
+import SocialNetwork.Commands.Command;
 import SocialNetwork.Commands.CommandParse;
+import SocialNetwork.Commands.PostCommand;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -23,6 +25,22 @@ public class PostReadTestShould {
         userMock = mock(User.class);
         wallMock = mock(Wall.class);
 
+
+    }
+
+    @Test
+    public void check_process_command_post(){
+
+        Command commandPost = new PostCommand(userMock," I love the weather today");
+
+        SocialNetwork socialNetwork = new SocialNetwork();
+        commandParse = new CommandParse(socialNetwork,console);
+
+        SocialNetworkApp socialNetworkApp = new SocialNetworkApp(commandParse);
+        socialNetworkApp.main("Alice -> I love the weather today");
+
+        Post post = new Post(userMock, " I love the weather today");
+        verify(userMock).addPostToWall(post);
 
     }
 

@@ -31,7 +31,6 @@ public class User {
     }
 
     public void showFriendsWall() {
-        List<Wall> friendsWalls =  friends.retrieveFriendsWalls();
-        wall.showPersonalAndFriendsWAll(friendsWalls);
+        wall.showPersonalAndFriendsWAll(friends.retrieveFriendsWalls());
     }
 }

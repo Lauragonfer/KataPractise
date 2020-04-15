@@ -19,7 +19,7 @@ public class CommandParse {
         this.console = console;
     }
 
-    public void processOrder(String order) {
+    public Command processOrder(String order) {
 
         User user;
 
@@ -44,7 +44,7 @@ public class CommandParse {
             command = new WallCommand (parseInputShowUserWall(order));
         }
 
-        command.executeCommand();
+        return command;
 
     }
 
@@ -96,5 +96,7 @@ public class CommandParse {
     }
 
 
-
+    public void executeOrder(Command command) {
+        command.executeCommand();
+    }
 }

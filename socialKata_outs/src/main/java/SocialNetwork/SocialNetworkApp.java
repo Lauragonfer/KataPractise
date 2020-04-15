@@ -11,7 +11,7 @@ public class SocialNetworkApp {
     }
 
     public void main(String order){
-        commandParse.processOrder(order);
+        commandParse.executeOrder(commandParse.processOrder(order));
     }
 
 }
