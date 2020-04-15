@@ -10,8 +10,8 @@ public enum PositionPlayer {
     POSITION21(2,1),
     POSITION22(2,2);
 
-    int row;
-    int column;
+    public final int row;
+    public final int column;
 
     PositionPlayer(int row, int column) {
         this.row = row;
