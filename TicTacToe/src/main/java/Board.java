@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.HashMap;
-import java.util.List;
 
 public class Board {
 
@@ -25,11 +23,31 @@ public class Board {
         this.board = board;
     }
 
-    public void addMovePlayer(CharPlayer player,PositionPlayer positionPlayer ) {
+    public GameMessage addMovePlayer(CharPlayer player,PositionPlayer positionPlayer ) {
 
         if ((board.get(positionPlayer)) == CharPlayer.EMPTY) {
             board.put(positionPlayer, player);
+            if (isDraw()){
+                return GameMessage.draw;
+            }
+            return messageNextTurn(player);
         }
+        return GameMessage.taken;
+    }
+
+    private boolean isDraw() {
+        return !board.containsValue(CharPlayer.EMPTY);
+    }
+
+    public GameMessage messageNextTurn(CharPlayer player) {
+        if(player.equals(CharPlayer.CHARX)){
+            return  GameMessage.turnO;
+        }
+        return  GameMessage.turnX;
+    }
+
+    private boolean isWin (){
+     return false;
     }
 
     @Override

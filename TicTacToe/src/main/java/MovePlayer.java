@@ -8,9 +8,21 @@ public class MovePlayer {
         this.position = playerPosition;
     }
 
-    public void addMoveBoard(Board board,CharPlayer lastMove) {
-        if (lastMove != player) {
-            board.addMovePlayer(player,position);
-        }
+    public GameMessage addMoveBoard(Board board) {
+
+          return  board.addMovePlayer(player,position);
     }
+
+    public boolean isTheSamePlayer(CharPlayer lastPlayer){
+        if (lastPlayer != player) {
+           return false;
+        }
+        return true;
+    }
+
+    public CharPlayer changeLastPlayer() {
+        return player;
+    }
+
+
 }
