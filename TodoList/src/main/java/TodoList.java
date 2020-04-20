@@ -3,7 +3,7 @@ import java.util.List;
 
 public class TodoList {
 
-    List<TaskTodo> todoListTasks;
+    private List<TaskTodo> todoListTasks;
 
     public TodoList() {
         this.todoListTasks = new ArrayList<TaskTodo>();
@@ -31,5 +31,33 @@ public class TodoList {
             }
         }
         return null;
+    }
+
+    public String printToDoList() {
+        String formatTaskList= "";
+        for (TaskTodo task: todoListTasks) {
+            formatTaskList = task.toString();
+        }
+        return formatTaskList;
+    }
+
+    public String printCompletedtask() {
+        String formatTaskList= "";
+        for (TaskTodo task: todoListTasks) {
+            if (task.isTaskCompleted()){
+                formatTaskList = task.toString();
+            }
+        }
+        return formatTaskList;
+    }
+
+    public String printIncompleteTask() {
+        String formatTaskList= "";
+        for (TaskTodo task: todoListTasks) {
+            if (!task.isTaskCompleted()){
+                formatTaskList = task.toString();
+            }
+        }
+        return formatTaskList;
     }
 }

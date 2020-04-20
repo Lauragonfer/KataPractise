@@ -1,10 +1,15 @@
 public class TodoListApp {
 
     private TodoList todoList;
+    Console console;
 
 
     public TodoListApp() {
         this.todoList = new TodoList();
+    }
+    public TodoListApp(Console console) {
+        this.todoList = new TodoList();
+        this.console = console;
     }
 
     public Message addTaskTodoList(String name, int id){
@@ -16,10 +21,26 @@ public class TodoListApp {
     }
 
     private boolean checkIfTaskNameIsValid(String name) {
-        return name.matches("[a-zA-Z0-9 ]+");
+        if(name.matches("[a-zA-Z0-9 ]+") && (name.length() >= 5 && name.length() <=20))
+        {
+            return true;
+        }
+        return false;
     }
 
     public Message completedTask(int id) {
         return todoList.markTaskAsCompleted (id);
+    }
+
+    public void showTodoList() {
+        console.printLine(todoList.printToDoList());
+    }
+
+    public void showCompletedTask() {
+        console.printLine(todoList.printCompletedtask());
+    }
+
+    public void showIncompleteTask() {
+        console.printLine(todoList.printIncompleteTask());
     }
 }
