@@ -1,3 +1,4 @@
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -46,9 +47,18 @@ public class TodoListShould {
         todoListApp = new TodoListApp(console);
 
         todoListApp.addTaskTodoList("Show Task",1);
+        todoListApp.completedTask(1);
+        todoListApp.addTaskTodoList("Second Task",2);
+        todoListApp.addTaskTodoList("Third Task",3);
+        todoListApp.completedTask(3);
+        todoListApp.addTaskTodoList("Fourth Task",4);
+
         todoListApp.showTodoList();
 
-        String ExpectedToDoList = "id: 1\nTask: Show Task\nStatus: Incomplete\nDue: 20-04-2020\n";
+        String ExpectedToDoList = "id: 1\nTask: Show Task\nStatus: Completed\nDue: 20-04-2020\n";
+        ExpectedToDoList += "id: 2\nTask: Second Task\nStatus: Incomplete\nDue: 20-04-2020\n";
+        ExpectedToDoList += "id: 3\nTask: Third Task\nStatus: Completed\nDue: 20-04-2020\n";
+        ExpectedToDoList += "id: 4\nTask: Fourth Task\nStatus: Incomplete\nDue: 20-04-2020\n";
         verify(console).printLine(ExpectedToDoList);
     }
 
@@ -80,5 +90,40 @@ public class TodoListShould {
         verify(console).printLine(ExpectedToDoList);
     }
 
+
+    @Test
+    public void show_a_addSubTaskOk_Message_When_a_New_SubTask_is_added_to_their_Father_Correctly (){
+        todoListApp = new TodoListApp(console);
+
+        todoListApp.addTaskTodoList("Father Task",1);
+        todoListApp.addSubtaskToTaskFather(1,10,"Daughter Task");
+
+        assertEquals(Message.addSubTaskOk,todoListApp.addSubtaskToTaskFather(1,10,"Daughter Task"));
+    }
+
+    @Test
+    public void show_a_list_of_task_with_the_subtask_of_each_one_if_not_have_Subtask_only_show_the_task (){
+        todoListApp = new TodoListApp(console);
+
+        todoListApp.addTaskTodoList("Father Task",1);
+        todoListApp.addSubtaskToTaskFather(1, 10,"Daughter Task");
+        todoListApp.addSubtaskToTaskFather(1, 11,"Second Daughter Task");
+        todoListApp.addTaskTodoList("Single Task",2);
+        todoListApp.addTaskTodoList("Third Task",3);
+        todoListApp.completedTask(3);
+
+
+        todoListApp.showTodoList();
+
+        String ExpectedToDoList = "id: 1\nTask: Father Task\nStatus: Incomplete\nDue: 20-04-2020\n";
+        ExpectedToDoList += "> Child Task <";
+        ExpectedToDoList += "id: 10\nTask: Daughter Task\nStatus: Incomplete\nDue: 20-04-2020\n";
+        ExpectedToDoList += "id: 11\nTask: Second Daughter Task\nStatus: Incomplete\nDue: 20-04-2020\n";
+        ExpectedToDoList += "> --- <";
+        ExpectedToDoList += "id: 2\nTask: Single Task\nStatus: Incomplete\nDue: 20-04-2020\n";
+        ExpectedToDoList += "id: 3\nTask: Third Task\nStatus: Completed\nDue: 20-04-2020\n";
+
+        verify(console).printLine(ExpectedToDoList);
+    }
 
 }

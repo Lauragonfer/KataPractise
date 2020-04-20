@@ -1,6 +1,7 @@
 public enum Message {
 
-    addTaskOk("Correct Adding task"),
+    addTaskOk("Correct Adding Task"),
+    addSubTaskOk("Correct Adding SubTask"),
     invalidNameTask("Invalid Name Task only characters between A-Z and 0-9"),
     markAsCompleted("Task Mark as completed"),
     taskNotFound("Task id not exist");

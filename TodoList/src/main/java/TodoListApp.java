@@ -20,6 +20,14 @@ public class TodoListApp {
         return  Message.invalidNameTask;
     }
 
+    public Message addSubtaskToTaskFather(int idFather, int idDaugther, String name) {
+        if(checkIfTaskNameIsValid(name)){
+
+            return todoList.addSubTask(idFather,idDaugther,name);
+        }
+        return  Message.invalidNameTask;
+    }
+
     private boolean checkIfTaskNameIsValid(String name) {
         if(name.matches("[a-zA-Z0-9 ]+") && (name.length() >= 5 && name.length() <=20))
         {
@@ -43,4 +51,6 @@ public class TodoListApp {
     public void showIncompleteTask() {
         console.printLine(todoList.printIncompleteTask());
     }
+
+
 }

@@ -15,6 +15,16 @@ public class TodoList {
         return Message.addTaskOk;
     }
 
+    public Message addSubTask(int idFather, int idDaugther, String name) {
+        TaskTodo taskFather = retrieveTaskByID(idFather);
+        if (taskFather != null){
+            taskFather.addDaugther(idDaugther,name);
+            return Message.addSubTaskOk;
+        }
+        return  Message.taskNotFound;
+    }
+
+
     public Message markTaskAsCompleted(int id) {
         TaskTodo task = retrieveTaskByID(id);
         if(task == null)
@@ -36,16 +46,23 @@ public class TodoList {
     public String printToDoList() {
         String formatTaskList= "";
         for (TaskTodo task: todoListTasks) {
-            formatTaskList = task.toString();
+            formatTaskList += task.toString();
+            if(task.hasSubtask()){
+                formatTaskList += "> Child Task <";
+                formatTaskList += task.addPrintSubTask();
+                formatTaskList += "> --- <";
+            }
         }
         return formatTaskList;
     }
+
+
 
     public String printCompletedtask() {
         String formatTaskList= "";
         for (TaskTodo task: todoListTasks) {
             if (task.isTaskCompleted()){
-                formatTaskList = task.toString();
+                formatTaskList += task.toString();
             }
         }
         return formatTaskList;
@@ -55,9 +72,11 @@ public class TodoList {
         String formatTaskList= "";
         for (TaskTodo task: todoListTasks) {
             if (!task.isTaskCompleted()){
-                formatTaskList = task.toString();
+                formatTaskList += task.toString();
             }
         }
         return formatTaskList;
     }
+
+
 }
