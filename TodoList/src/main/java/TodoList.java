@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class TodoList {
 
@@ -11,11 +12,19 @@ public class TodoList {
 
 
     public Message addTask(String name,int id) {
+        if (!isTaskNameValid(name))
+        {
+            return Message.invalidNameTask;
+        }
         todoListTasks.add(new TaskTodo(name,id));
         return Message.addTaskOk;
     }
 
     public Message addSubTask(int idFather, int idDaugther, String name) {
+        if (!isTaskNameValid(name))
+        {
+          return Message.invalidNameTask;
+        }
         TaskTodo taskFather = retrieveTaskByID(idFather);
         if (taskFather != null){
             taskFather.addDaugther(idDaugther,name);
@@ -27,14 +36,28 @@ public class TodoList {
 
     public Message markTaskAsCompleted(int id) {
         TaskTodo task = retrieveTaskByID(id);
+
         if(task == null)
         {
             return Message.taskNotFound;
         }
-        return task.completedTask();
+        return task.completedFatherTask();
     }
 
-    private TaskTodo retrieveTaskByID(int id) {
+    public Message markSubTaskAsCompleted(int idFather, int idDaughter) {
+
+        TaskTodo fatherTask = retrieveTaskByID(idFather);
+
+        if(fatherTask == null)
+        {
+            return Message.fatherTaskNotFound;
+        }
+        return fatherTask.markSubTaskAsComplete(idDaughter);
+
+    }
+
+    public TaskTodo retrieveTaskByID(int id) {
+
         for (TaskTodo task: todoListTasks) {
             if(task.isIdEquals(id)){
                 return task;
@@ -60,10 +83,12 @@ public class TodoList {
 
     public String printCompletedtask() {
         String formatTaskList= "";
-        for (TaskTodo task: todoListTasks) {
-            if (task.isTaskCompleted()){
-                formatTaskList += task.toString();
-            }
+
+        List<TaskTodo> lista = todoListTasks.stream().filter(taskTodo -> taskTodo.isTaskCompleted())
+                .collect(Collectors.toList());
+
+        for (TaskTodo task: lista) {
+            formatTaskList += task.toString();
         }
         return formatTaskList;
     }
@@ -76,6 +101,13 @@ public class TodoList {
             }
         }
         return formatTaskList;
+    }
+    private boolean isTaskNameValid(String name) {
+        if(name.matches("[a-zA-Z0-9 ]+") && (name.length() >= 5 && name.length() <=20))
+        {
+            return true;
+        }
+        return false;
     }
 
 

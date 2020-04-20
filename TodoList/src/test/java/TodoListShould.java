@@ -96,7 +96,6 @@ public class TodoListShould {
         todoListApp = new TodoListApp(console);
 
         todoListApp.addTaskTodoList("Father Task",1);
-        todoListApp.addSubtaskToTaskFather(1,10,"Daughter Task");
 
         assertEquals(Message.addSubTaskOk,todoListApp.addSubtaskToTaskFather(1,10,"Daughter Task"));
     }
@@ -124,6 +123,22 @@ public class TodoListShould {
         ExpectedToDoList += "id: 3\nTask: Third Task\nStatus: Completed\nDue: 20-04-2020\n";
 
         verify(console).printLine(ExpectedToDoList);
+    }
+
+    @Test
+    public void show_a_MarkAsCompletedSubtask_When_mark_a_Subtask_as_completed(){
+        todoListApp.addTaskTodoList("InCompleted Sub Task",1);
+        todoListApp.addSubtaskToTaskFather(1, 10,"Daughter Task");
+        assertEquals(Message.markAsCompletedSubTask,todoListApp.completedSubTask(1,10));
+
+    }
+
+    @Test
+    public void show_SomeSubTaskAreIncomplete_When_you_completed_a_Task_with_incomplete_Subtask(){
+        todoListApp.addTaskTodoList("Completed Task",1);
+        todoListApp.addSubtaskToTaskFather(1, 10,"Daughter Task");
+
+        assertEquals(Message.someSubTaskAreIncomplete,todoListApp.completedTask(1));
     }
 
 }

@@ -1,5 +1,3 @@
-import java.util.Date;
-
 public class TaskTodo {
 
     private int id;
@@ -16,9 +14,18 @@ public class TaskTodo {
         this.subTasklist = new SubTaskList();
     }
 
-    public Message completedTask() {
+    public Message completedFatherTask() {
+
+        if(subTasklist.areAllCompleted()){
+            this.status = StatusTask.OK;
+            return Message.markAsCompleted;
+        }
+    return Message.someSubTaskAreIncomplete;
+    }
+
+    public Message completedSubTask() {
         this.status = StatusTask.OK;
-        return Message.markAsCompleted;
+        return Message.markAsCompletedSubTask;
     }
 
     public boolean isIdEquals(int id) {
@@ -29,7 +36,7 @@ public class TaskTodo {
     }
 
     public boolean isTaskCompleted() {
-        if (status.equals(status.OK)){
+        if (status.equals(StatusTask.OK)){
             return true;
         }
         return false;
@@ -41,6 +48,10 @@ public class TaskTodo {
         return subTasklist.addSubTask(subTask);
 
 
+    }
+
+    public Message markSubTaskAsComplete(int idDaughter) {
+        return subTasklist.subTaskCompleted(idDaughter);
     }
 
     public boolean hasSubtask() {
@@ -58,4 +69,6 @@ public class TaskTodo {
     public String toString() {
         return  "id: " + id + "\n" + "Task: " + name + "\n" + "Status: " + status.status + "\n" + "Due: " + date +"\n" ;
     }
+
+
 }

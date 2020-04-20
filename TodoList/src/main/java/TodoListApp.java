@@ -13,31 +13,19 @@ public class TodoListApp {
     }
 
     public Message addTaskTodoList(String name, int id){
-        if(checkIfTaskNameIsValid(name)){
-
-            return todoList.addTask(name,id);
-        }
-        return  Message.invalidNameTask;
+        return todoList.addTask(name,id);
     }
 
     public Message addSubtaskToTaskFather(int idFather, int idDaugther, String name) {
-        if(checkIfTaskNameIsValid(name)){
-
-            return todoList.addSubTask(idFather,idDaugther,name);
-        }
-        return  Message.invalidNameTask;
-    }
-
-    private boolean checkIfTaskNameIsValid(String name) {
-        if(name.matches("[a-zA-Z0-9 ]+") && (name.length() >= 5 && name.length() <=20))
-        {
-            return true;
-        }
-        return false;
+        return todoList.addSubTask(idFather,idDaugther,name);
     }
 
     public Message completedTask(int id) {
         return todoList.markTaskAsCompleted (id);
+    }
+
+    public Message completedSubTask(int idFather, int idDaughter) {
+        return todoList.markSubTaskAsCompleted(idFather,idDaughter);
     }
 
     public void showTodoList() {
@@ -51,6 +39,7 @@ public class TodoListApp {
     public void showIncompleteTask() {
         console.printLine(todoList.printIncompleteTask());
     }
+
 
 
 }

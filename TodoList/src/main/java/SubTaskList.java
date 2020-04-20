@@ -22,6 +22,29 @@ public class SubTaskList {
         return true;
     }
 
+    public boolean areAllCompleted() {
+
+        if(listSubTask.isEmpty()){
+            return true;
+        }
+        for (TaskTodo subTask: listSubTask) {
+            if(!subTask.isTaskCompleted()){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public Message subTaskCompleted(int idDaughter) {
+        for (TaskTodo subTask: listSubTask) {
+            if(subTask.isIdEquals(idDaughter)){
+                subTask.completedSubTask();
+                return Message.markAsCompletedSubTask;
+            }
+        }
+        return Message.subTaskNotFound;
+
+    }
 
     @Override
     public String toString() {
