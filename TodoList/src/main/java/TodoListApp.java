@@ -7,10 +7,10 @@ public class TodoListApp {
         this.todoList = new TodoList();
     }
 
-    public Message addTaskTodoList(String name){
+    public Message addTaskTodoList(String name, int id){
         if(checkIfTaskNameIsValid(name)){
 
-            return todoList.addTask(name);
+            return todoList.addTask(name,id);
         }
         return  Message.invalidNameTask;
     }
@@ -19,4 +19,7 @@ public class TodoListApp {
         return name.matches("[a-zA-Z0-9 ]+");
     }
 
+    public Message completedTask(int id) {
+        return todoList.markTaskAsCompleted (id);
+    }
 }
