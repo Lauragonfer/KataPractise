@@ -12,20 +12,13 @@ public class TodoList {
 
 
     public Message addTask(String name,int id) {
-        if (!isTaskNameValid(name))
-        {
-            return Message.invalidNameTask;
-        }
         todoListTasks.add(new TaskTodo(name,id));
         return Message.addTaskOk;
     }
 
     public Message addSubTask(int idFather, int idDaugther, String name) {
-        if (!isTaskNameValid(name))
-        {
-          return Message.invalidNameTask;
-        }
         TaskTodo taskFather = retrieveTaskByID(idFather);
+
         if (taskFather != null){
             taskFather.addDaugther(idDaugther,name);
             return Message.addSubTaskOk;
@@ -102,13 +95,7 @@ public class TodoList {
         }
         return formatTaskList;
     }
-    private boolean isTaskNameValid(String name) {
-        if(name.matches("[a-zA-Z0-9 ]+") && (name.length() >= 5 && name.length() <=20))
-        {
-            return true;
-        }
-        return false;
-    }
+
 
 
 }

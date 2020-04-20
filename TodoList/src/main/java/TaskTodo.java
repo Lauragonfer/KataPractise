@@ -1,16 +1,18 @@
+import java.util.Objects;
+
 public class TaskTodo {
 
-    private int id;
-    private String name;
+    private TaskId id;
+    private TaskName name;
     private StatusTask status;
-    private String date;
+    private TaskDate date;
     private SubTaskList subTasklist;
 
     public TaskTodo(String name, int id) {
-        this.id =id;
-        this.name = name;
+        this.id = new TaskId(id);
+        this.name = new TaskName(name);
         this.status = StatusTask.KO;
-        this.date = "20-04-2020";
+        this.date = new TaskDate();
         this.subTasklist = new SubTaskList();
     }
 
@@ -29,7 +31,7 @@ public class TaskTodo {
     }
 
     public boolean isIdEquals(int id) {
-        if (this.id == id){
+        if (this.id.equals(new TaskId(id))){
             return true;
         }
         return false;
@@ -67,8 +69,72 @@ public class TaskTodo {
 
     @Override
     public String toString() {
-        return  "id: " + id + "\n" + "Task: " + name + "\n" + "Status: " + status.status + "\n" + "Due: " + date +"\n" ;
+        return  "id: " + id.toString() + "\n" + "Task: " + name.toString() + "\n" + "Status: " + status.status + "\n" + "Due: " + date.toString() +"\n" ;
+    }
+}
+
+class  TaskId {
+    int id;
+
+    public TaskId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(id) ;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TaskId taskId = (TaskId) o;
+        return id == taskId.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+}
+
+class  TaskName {
+
+    String name;
+
+    public TaskName(String nameTask) {
+        if (!isTaskNameValid(nameTask)){
+            throw new InvalidNameException(Message.invalidNameTask.message);
+        }
+        this.name = nameTask;
+    }
+
+    private boolean isTaskNameValid(String nametask) {
+        if(nametask.matches("[a-zA-Z0-9 ]+") && (nametask.length() >= 5 && nametask.length() <=20))
+        {
+            return true;
+        }
+        return false;
     }
 
 
+    @Override
+    public String toString() {
+        return  name ;
+    }
+}
+
+class TaskDate{
+
+    String date;
+
+    public TaskDate() {
+        this.date = "20-04-2020";
+    }
+
+    @Override
+    public String toString() {
+        return date;
+    }
 }
