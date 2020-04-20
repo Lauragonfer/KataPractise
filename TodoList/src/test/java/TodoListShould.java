@@ -11,5 +11,10 @@ public class TodoListShould {
         assertEquals(Message.addTaskOk,todoListApp.addTaskTodoList("First Task"));
     }
 
+    @Test
+    public void show_a_InvalidNameTask_When_name_Task_has_not_only_Alphanumeric_and_space_character (){
+        TodoListApp todoListApp = new TodoListApp();
+        assertEquals(Message.invalidNameTask,todoListApp.addTaskTodoList("First ???"));
+    }
 
 }

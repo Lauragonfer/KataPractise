@@ -9,13 +9,14 @@ public class TodoListApp {
 
     public Message addTaskTodoList(String name){
         if(checkIfTaskNameIsValid(name)){
+
             return todoList.addTask(name);
         }
         return  Message.invalidNameTask;
     }
 
     private boolean checkIfTaskNameIsValid(String name) {
-        return true;
+        return name.matches("[a-zA-Z0-9 ]+");
     }
 
 }
