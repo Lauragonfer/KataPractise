@@ -10,7 +10,7 @@ public class TaskTodo {
 
     public TaskTodo(String name, int id) {
         this.id = new TaskId(id);
-        this.name = new TaskName(name);
+        this.name = TaskName.createTaskName(name);
         this.status = StatusTask.KO;
         this.date = new TaskDate();
         this.subTasklist = new SubTaskList();
@@ -47,7 +47,7 @@ public class TaskTodo {
 
     public Message addDaugther(int idDaugther, String name) {
         TaskTodo subTask = new TaskTodo(name,idDaugther);
-        return subTasklist.addSubTask(subTask);
+        return subTasklist.addSubTask(new TaskId(idDaugther),subTask);
 
 
     }
@@ -57,7 +57,7 @@ public class TaskTodo {
     }
 
     public boolean hasSubtask() {
-        if (!subTasklist.isEmpty()){
+        if (!subTasklist.isEmptySubtaskMap()){
             return true;
         }
         return false;
@@ -103,21 +103,17 @@ class  TaskName {
 
     String name;
 
-    public TaskName(String nameTask) {
-        if (!isTaskNameValid(nameTask)){
-            throw new InvalidNameException(Message.invalidNameTask.message);
-        }
+    private TaskName(String nameTask) {
         this.name = nameTask;
     }
 
-    private boolean isTaskNameValid(String nametask) {
-        if(nametask.matches("[a-zA-Z0-9 ]+") && (nametask.length() >= 5 && nametask.length() <=20))
+    public static TaskName createTaskName(String nameTask) {
+        if(!nameTask.matches("[a-zA-Z0-9 ]+") || nameTask.length() < 5 || nameTask.length() >20)
         {
-            return true;
+            throw new InvalidNameException(Message.invalidNameTask.message);
         }
-        return false;
+        return new TaskName(nameTask);
     }
-
 
     @Override
     public String toString() {

@@ -1,33 +1,24 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class SubTaskList {
 
-    private List<TaskTodo> listSubTask;
-
+    private Map<TaskId, TaskTodo> mapSubTask;
 
     public SubTaskList() {
-        this.listSubTask = new ArrayList<TaskTodo>();
+        this.mapSubTask = new HashMap<>();
     }
 
-    public Message addSubTask(TaskTodo taskTodo){
-        listSubTask.add(taskTodo);
+    public Message addSubTask(TaskId idTask,TaskTodo taskTodo){
+        mapSubTask.put(idTask,taskTodo);
         return Message.addSubTaskOk;
     }
 
-    public boolean isEmpty() {
-        if(listSubTask.size() != 0 ){
-            return false;
-        }
-        return true;
-    }
-
     public boolean areAllCompleted() {
-
-        if(listSubTask.isEmpty()){
+        if(mapSubTask.isEmpty()){
             return true;
         }
-        for (TaskTodo subTask: listSubTask) {
+        for (TaskTodo subTask : mapSubTask.values()) {
             if(!subTask.isTaskCompleted()){
                 return false;
             }
@@ -36,22 +27,28 @@ public class SubTaskList {
     }
 
     public Message subTaskCompleted(int idDaughter) {
-        for (TaskTodo subTask: listSubTask) {
-            if(subTask.isIdEquals(idDaughter)){
-                subTask.completedSubTask();
-                return Message.markAsCompletedSubTask;
-            }
+        TaskId idSubtask = new TaskId(idDaughter);
+        if (mapSubTask.containsKey(idSubtask)){
+            TaskTodo subtask = mapSubTask.get(idSubtask);
+            subtask.completedSubTask();
+            return Message.markAsCompletedSubTask;
         }
         return Message.subTaskNotFound;
-
     }
 
     @Override
     public String toString() {
         String subTaskString = "";
-        for (TaskTodo subTask: listSubTask) {
+        for (TaskTodo subTask : mapSubTask.values()) {
             subTaskString +=  subTask.toString();
         }
         return subTaskString;
+    }
+
+    public boolean isEmptySubtaskMap() {
+        if(mapSubTask.isEmpty()){
+            return true;
+        }
+        return false;
     }
 }

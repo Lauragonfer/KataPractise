@@ -26,7 +26,7 @@ public class TodoListShould {
     @Test
     public void show_a_InvalidNameTask_When_name_Task_has_not_only_Alphanumeric_and_space_character (){
 
-        assertThrows(InvalidNameException.class, () -> todoListApp.addTaskTodoList("First ????",1));
+        assertThrows(InvalidNameException.class, () -> todoListApp.addTaskTodoList("First ???",1));
     }
 
     @Test

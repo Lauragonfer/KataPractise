@@ -72,8 +72,6 @@ public class TodoList {
         return formatTaskList;
     }
 
-
-
     public String printCompletedtask() {
         String formatTaskList= "";
 
