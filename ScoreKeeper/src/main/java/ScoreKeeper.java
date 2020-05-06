@@ -3,10 +3,12 @@ public class ScoreKeeper {
 
     private int scoreTeamA;
     private int scoreTeamB;
+    private FormatScore format;
 
     public ScoreKeeper() {
         this.scoreTeamA = 0;
         this.scoreTeamB = 0;
+        this.format = new FormatScore();
     }
 
 
@@ -30,7 +32,6 @@ public class ScoreKeeper {
     }
 
     String getScore(){
-        FormatScore format = new FormatScore();
         return format.formatScoreString(scoreTeamA,scoreTeamB);
     }
 
